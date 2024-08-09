@@ -1,36 +1,20 @@
-System.out.println("Ingresa la variable");
-        int variable = scanner.nextInt();
-        switch (variable) {
+public static void main(String[] args) {
+        int a = Integer.parseInt(JOptionPane.showInputDialog("Ingrrese el primer numero"));
+        int b = Integer.parseInt(JOptionPane.showInputDialog("Ingrrese el segundo numero"));
+        int c = Integer.parseInt(JOptionPane.showInputDialog("Ingrrese el tercer numero"));
 
-            case 1: //(A > B) Y (A > C)
-                System.out.println("El mayor es A");
-                break;
+        if (a > b && a > c) {
+            JOptionPane.showInputDialog("El primer numero es mayor" + a);
+        }else if (b>a && b>c){
+            JOptionPane.showInputDialog("El primer numero es mayor" + b);
+        } else if (c>a && c>b) {
+            JOptionPane.showInputDialog("El primer numero es mayor" + c);
 
-            case 2: //(B > A) Y (B > C)
-                System.out.println("El mayor es B");
-                break;
-
-            case 3: //(C > A) Y (C > B)
-                System.out.println("El mayor es C");
-                break;
-
-            case 4:   //(A < B) Y (A < C)
-                System.out.println("el menor es A");
-                break;
-
-            case 5:    //(B < A) Y (B < C)
-                System.out.println("el menor es B");
-                break;
-
-            case 6:    //(C < A) Y (C < B)
-                System.out.println("el menor es C");
-                break;
-
-            default:
-                System.out.println("Detectando valores iguales");
-                break;
-
+        }else {
+            JOptionPane.showInputDialog("Los numeros son iguales");
 
         }
+
+
     }
-}
+    }
